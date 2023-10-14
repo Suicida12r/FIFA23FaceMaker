@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Scanner Facial FIFA 21</title>
+  <script defer src="../static/js/face-api.min.js"></script>
+  <script defer src="../static/js/script.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    video {
+      width: 720px;
+      height: 560px;
+    }
+
+    canvas {
+      position: absolute;
+    }
+
+    #results {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    #timer {
+      font-size: 24px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <video id="video" autoplay muted></video>
+  <button id="start-scan-button">Iniciar Varredura</button>
+  <div id="results">
+    <h2>Resultados da Varredura:</h2>
+    <div id="scan-results"></div>
+  </div>
+  <div id="timer">Tempo da Varredura: <span id="timer-value">0</span> segundos</div>
+</body>
+</html>
